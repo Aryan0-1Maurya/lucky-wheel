@@ -1,0 +1,153 @@
+<!-- 
+
+      ************************************************************
+
+           ++++++++++++++    --------    +++++++++++++++++
+
+{   By ~Aryan Maurya Mr.perfect https://amsrportfolio.netlify.app  }
+
+           ++++++++++++++    --------    +++++++++++++++++
+
+      ************************************************************
+ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="author" content="Aryan Maurya" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="favicon.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <meta
+      name="description"
+      content="This is online lucky wheel game build for your imporove thing skill in this domain by aryan maurya enjoy your game"
+    />
+    <meta name="keywords" content="Lucky Wheel Game, spin and win, wheel of fortune, luck-based game, chance game, gaming, entertainment, fun game, lucky draw, prize wheel, rewards, spinning game, win prizes, virtual wheel, leisure activity">
+
+    <title>Lucky Wheel</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bonheur+Royale&family=Orbitron&family=Roboto+Slab&family=Teko&family=Tinos&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <canvas id="cnv"></canvas>
+    <div id="infos" onclick="displayInfos('block')">i</div>
+    <div id="bank_balance">100 $</div>
+    <div id="play">
+      Lucky Wheel<br />
+      <span style="font-size: 0.6em"> click to play</span>
+    </div>
+    <div id="output_result">100 $</div>
+    <div id="container_down">
+      <div class="row">
+        <div class="case_num fifty_black" val_color="black">50</div>
+        <div class="case_num fifty_white" val_color="white">50</div>
+      </div>
+      <div class="row">
+        <div class="case_num five">5</div>
+        <div class="case_num ten">10</div>
+        <div class="case_num twenty">20</div>
+      </div>
+      <div class="row">
+        <div class="case_num one">1</div>
+        <div class="case_num three">3</div>
+      </div>
+    </div>
+    <div id="container_tokens">
+      <div class="choicetoken token1" onClick="choiceToken(1)">1</div>
+      <div class="choicetoken token5" onClick="choiceToken(5)">5</div>
+      <div class="choicetoken token10" onClick="choiceToken(10)">10</div>
+      <div class="choicetoken tokenall" onClick="choiceToken('all')">ALL</div>
+      <div id="cancel" onClick="cancel()">C</div>
+    </div>
+    <div id="display_infos">
+      <div id="title">Lucky Wheel</div>
+      <div id="close_display_infos" onclick="displayInfos('none')">X</div>
+      <div class="title_step">
+        <div class="num_step">1</div>
+      </div>
+      <div>
+        <span style="text-decoration: underline"> TOKEN</span> : Select a token
+        value
+      </div>
+      <hr />
+      <div class="title_step">
+        <div class="num_step">2</div>
+      </div>
+      <div>
+        <span style="text-decoration: underline">BET</span> : Select one or more
+        numbers
+      </div>
+      <hr />
+      <div class="title_step">
+        <div class="num_step">3</div>
+      </div>
+      <div>
+        <span style="text-decoration: underline">PLAY</span> : Start the wheel
+      </div>
+      <hr />
+      <div class="title_step">
+        <div class="num_step">4</div>
+      </div>
+      <div>
+        <span style="text-decoration: underline">WIN</span> : If the number bet
+        is a winner, <br />
+        you win your the number multiplied by the bet
+      </div>
+      <hr />
+      <br />
+      <span style="font-size: 2em">GOOD LUCK</span>
+    </div>
+    <script>
+      Swal.fire({
+        icon: "success",
+        title: "Welcome All the best from Developer",
+        showConfirmButton: false,
+        timer: 1800,
+        showClass: {
+          popup: `
+           animate__animated
+           animate__fadeInUp
+           animate__faster
+         `,
+        },
+        hideClass: {
+          popup: `
+           animate__animated
+           animate__fadeOutDown
+           animate__faster
+         `,
+        },
+      });
+    </script>
+  </body>
+</html>
+
+<!-- 
+
+      ************************************************************
+
+           ++++++++++++++    --------    +++++++++++++++++
+
+{   By ~Aryan Maurya Mr.perfect https://amsrportfolio.netlify.app  }
+
+           ++++++++++++++    --------    +++++++++++++++++
+
+      ************************************************************
+ -->
